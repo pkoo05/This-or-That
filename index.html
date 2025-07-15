@@ -34,24 +34,24 @@ Known Issues:
 
 
 <script>
-        var allergy_count = 0;//variable to keep track of the number of times the user answers a question that leads to the allergy diagnosis 
-        var cold_count = 0;//variable to keep track of the number of times the user answers a question that leads to the cold diagnosis 
+        var migraine_count = 0;//variable to keep track of the number of times the user answers a question that leads to the migraine diagnosis 
+        var headache_count = 0;//variable to keep track of the number of times the user answers a question that leads to the headache diagnosis 
 
-        function allergyAdd(){ //this function is used to add an additional count to allergy_count each time it is called
-            allergy_count = allergy_count + 1; 
-		//alert("allergy_count is " + allergy_count); I wanted to further clarify that the alert is displaying the count for allergy_count, but this code is now irrelevant
+        function migraineAdd(){ //this function is used to add an additional count to allergy_count each time it is called
+            migraine_count = migraine_count + 1; 
+		//alert("migraine_count is " + migraine_count); I wanted to further clarify that the alert is displaying the count for migraine_count, but this code is now irrelevant
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;//this function is used to add an additional count to cold_count each time it is called
+        function headacheAdd(){
+            headache_count = headache_count + 1;//this function is used to add an additional count to cold_count each time it is called
 		//alert("cold_count is " + cold_count); I wanted to add further clarify that the alert is displaying the count for cold_count, but this code is now irrelevant
         }
 
 	function outputResults(){
-		var percent_allergy = allergy_count/(allergy_count + cold_count)*100; // This line converts the allergy_count into a percentage
-		var percent_cold = cold_count/(allergy_count + cold_count)*100; // This line converts the cold_count into a percentage
+		var percent_migraine = migraine_count/(migraine_count + headache_count)*100; // This line converts the allergy_count into a percentage
+		var percent_headache = headache_count/(migraine_count + headache_count)*100; // This line converts the cold_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
-		resultsLocation.innerHTML = "Probability it is allergies = " + percent_allergy + "% <br> Probability it is a cold = " + percent_cold + "%" //This line replaces the text from the Results Page with the diagnosis
+		resultsLocation.innerHTML = "Probability it is a migraine = " + percent_migraine + "% <br> Probability it is a headache = " + percent_headache + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
 
   </script>
