@@ -6,7 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-[ADD YOUR NAME HERE]
+Pamela Koo
 	
 Further Information:
 https://www.w3schools.com/w3css/default.asp
@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-[ADD YOUR DISCRIPTION HERE]
+The goal of this app is to help readers determine whether a source is based on science or pseudoscience.
 	
 Known Issues:
 [ADD ANY KNOWN ISSUES HERE]
@@ -25,7 +25,7 @@ Known Issues:
 -->
 	
    <head> 
-      <title>Migraine or Headache</title>  
+      <title>Is this based on science?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -34,17 +34,17 @@ Known Issues:
 
 
 <script>
-        var migraine_count = 0;//variable to keep track of the number of times the user answers a question that leads to the migraine diagnosis 
-        var headache_count = 0;//variable to keep track of the number of times the user answers a question that leads to the headache diagnosis 
+        var science_count = 0;//variable to keep track of the number of times the user answers a question that leads to the science diagnosis 
+        var pseudo_count = 0;//variable to keep track of the number of times the user answers a question that leads to the pseudoscience diagnosis 
 
-        function migraineAdd(){ //this function is used to add an additional count to allergy_count each time it is called
-            migraine_count = migraine_count + 1; 
-		//alert("migraine_count is " + migraine_count); I wanted to further clarify that the alert is displaying the count for migraine_count, but this code is now irrelevant
+        function scienceAdd(){ //this function is used to add an additional count to science_count each time it is called
+            science_count = science_count + 1; 
+		//alert("science_count is " + science_count); I wanted to further clarify that the alert is displaying the count for migraine_count, but this code is now irrelevant
         }
 
-        function headacheAdd(){
-            headache_count = headache_count + 1;//this function is used to add an additional count to cold_count each time it is called
-		//alert("cold_count is " + cold_count); I wanted to add further clarify that the alert is displaying the count for cold_count, but this code is now irrelevant
+        function pseudoAdd(){
+            pseudo_count = pseudo_count + 1;//this function is used to add an additional count to pseudo_count each time it is called
+		//alert("pseudo_count is " + p_count); I wanted to add further clarify that the alert is displaying the count for cold_count, but this code is now irrelevant
         }
 
 	function outputResults(){
