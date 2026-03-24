@@ -48,10 +48,10 @@ Known Issues:
         }
 
 	function outputResults(){
-		var percent_migraine = migraine_count/(migraine_count + headache_count)*100; // This line converts the allergy_count into a percentage
-		var percent_headache = headache_count/(migraine_count + headache_count)*100; // This line converts the cold_count into a percentage
+		var percent_science = science_count/(science_count + pseudo_count)*100; // This line converts the science_count into a percentage
+		var percent_pseudo = pseudo_count/(science_count + pseudo_count)*100; // This line converts the pseudo_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
-		resultsLocation.innerHTML = "Probability it is a migraine = " + percent_migraine + "% <br> Probability it is a headache = " + percent_headache + "%" //This line replaces the text from the Results Page with the diagnosis
+		resultsLocation.innerHTML = "Probability that your source is based on science = " + percent_science + "% <br> Probability that your source is not based on science = " + percent_pseudo + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
 
   </script>
