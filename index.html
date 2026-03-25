@@ -155,23 +155,34 @@ Known Issues:
 
 	<div id="content" class="w3-container">
 		<p> Does this claim tend to ignore evidence that disagrees with it? </p> <!--I asked the question for Q5 here.-->
-		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
-		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to pseudo_count-->
+		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to science_count-->
 	</div>
 </div>
 
 <div class="page" id="six">
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q5-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q6-->
 		<h1>Question 6</h1>
 	</div>
 
 	<div id="content" class="w3-container">
-		<p> Does this claim tend to ignore evidence that disagrees with it? </p> <!--I asked the question for Q5 here.-->
-		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
-		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+		<p> Is there a lot of "technobabble" or technical sounding words that do not have clearly defined meanings in the community? </p> <!--I asked the question for Q5 here.-->
+		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q6. If clicked, adds one to pseudo_count-->
+		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to science_count-->
 	</div>
 </div>
-	
+
+<div class="page" id="seven">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q7-->
+		<h1>Question 7</h1>
+	</div>
+
+	<div id="content" class="w3-container">
+		<p> Do the authors of the article and/or those performing the experiments have relevant degrees or job positions? </p> <!--I asked the question for Q7 here.-->
+		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q7. If clicked, adds one to science_count-->
+		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q7. If clicked, adds one to pseudo_count-->
+	</div>
+</div>
 <!-- this section displays Page for Results and gives user the computer results option-->
 <div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- header for the results page-->
