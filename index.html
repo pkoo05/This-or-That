@@ -82,11 +82,11 @@ Known Issues:
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Migraine or headache?</h1> 
+	<h1>Is this source based on science?</h1> 
 </div>
 <!--this section displays the content that the user sees immediately upon opening the website-->
 <div id="content" class="w3-container">
-	<p>Head hurt? Answer the following questions to help determine whether you have a headache or a migraine!</p> <!--Introduce the user to the website-->
+	<p>It is always important to consider the quality of our sciencce sources as there is a lot of misinformation out there! The following questions can help you determine whether your source is grounded in evidence-based science.</p> <!--Introduce the user to the website-->
 
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- this line presents the first button that users click to proceed to page one-->
 	
@@ -102,9 +102,9 @@ Known Issues:
 	</div>
 	
     	<div id="content" class="w3-container"> <!--creating the question and buttons for Q1-->
-		<p>Where do you experience head pain?</p> <!--I asked the question for Question 1 (Q1) here.-->  
-		<a href="#two" onclick="migraineAdd();" class="w3-btn w3-orange"> More on one side of the head </a> <!-- Create Yes (Watery) button for Q1. If clicked, adds one to allergy_count-->
-		<a href="#two" onclick="headacheAdd();" class="w3-btn w3-orange"> All over the head </a> <!-- Create No (Itchy) button for Q1. If clicked, adds one to cold_count-->
+		<p> Does the claim sound sensational or exagerated, i.e. ALL or NONE of something happens? </p> <!--I asked the question for Question 1 (Q1) here.-->  
+		<a href="#two" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Watery) button for Q1. If clicked, adds one to allergy_count-->
+		<a href="#two" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Itchy) button for Q1. If clicked, adds one to cold_count-->
 	</div>
 </div>
 	
@@ -115,9 +115,9 @@ Known Issues:
 	</div>
 	
 	<div id="content" class="w3-container"> <!--creating the question and buttons for Q2-->
-		<p>Do you have nausea and/or vomiting?</p> <!--I asked the question for Q2 here.--> 
-		<a href="#three" onclick="migraineAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q2. If clicked, adds one to cold_count-->
-		<a href="#three" onclick="headacheAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q2. If clicked, adds one to allergy_count-->
+		<p>Is the information based on data from experiments or mostly on anecdotal evidence such as word of mouth or a collection of stories?</p> <!--I asked the question for Q2 here.--> 
+		<a href="#three" onclick="scienceAdd();" class="w3-btn w3-orange"> Experimental data </a> <!-- Create Yes button for Q2. If clicked, adds one to cold_count-->
+		<a href="#three" onclick="pseudoAdd();" class="w3-btn w3-orange"> Anedotal evidence</a> <!-- Create No button for Q2. If clicked, adds one to allergy_count-->
 	</div>
 </div>	
 	
@@ -128,9 +128,9 @@ Known Issues:
 	</div>
 
 	<div id="content" class="w3-container"> <!--creating the question and buttons for Q3-->
-		<p>Are you sensitive to light, sound, or smells?</p> <!--I asked the question for Q3 here.--> 
-		<a href="#four" onclick="migraineAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q3. If clicked, adds one to cold_count-->
-		<a href="#four" onclick="coldAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q3. If clicked, adds one to allergy_count-->
+		<p> Is there one or more peer-reviewed journal articles for this claim? </p> <!--I asked the question for Q3 here.--> 
+		<a href="#four" onclick="scienceAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q3. If clicked, adds one to cold_count-->
+		<a href="#four" onclick="pseudoAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q3. If clicked, adds one to allergy_count-->
 	</div>
 </div>
 	
@@ -141,9 +141,9 @@ Known Issues:
 	</div>
 
 	<div id="content" class="w3-container">
-		<p>Do you have other symptoms such as muscle tension or a general feeling of unwellness?</p> <!--I asked the question for Q4 here.--> 
-		<a href="#five" onclick="migraineAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to allergy_count-->
-		<a href="#five" onclick="headacheAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Chronic) button for Q4. If clicked, adds one to cold_count-->
+		<p>Does this claim agree with the general consensus of scientific knowledge? If you look around at the general understanding of this topic, does this claim generally agree or is it in complete disagreement?</p> <!--I asked the question for Q4 here.--> 
+		<a href="#five" onclick="scienceAdd();" class="w3-btn w3-orange"> Generally agrees or only slight disagreement </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to allergy_count-->
+		<a href="#five" onclick="pseudoAdd();" class="w3-btn w3-orange"> Completely disagrees </a> <!-- Create No (Chronic) button for Q4. If clicked, adds one to cold_count-->
 	</div>
 </div>
 
@@ -154,12 +154,24 @@ Known Issues:
 	</div>
 
 	<div id="content" class="w3-container">
-		<p>Did you experience visual symptoms like flashing lights or visual snow before the head pain? </p> <!--I asked the question for Q5 here.-->
-		<a href="#results" onclick="migraineAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
-		<a href="#results" onclick="headacheAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+		<p> Does this claim tend to ignore evidence that disagrees with it? </p> <!--I asked the question for Q5 here.-->
+		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
+		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
 	</div>
 </div>
 
+<div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q5-->
+		<h1>Question 6</h1>
+	</div>
+
+	<div id="content" class="w3-container">
+		<p> Does this claim tend to ignore evidence that disagrees with it? </p> <!--I asked the question for Q5 here.-->
+		<a href="#results" onclick="pseudoAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
+		<a href="#results" onclick="scienceAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+	</div>
+</div>
+	
 <!-- this section displays Page for Results and gives user the computer results option-->
 <div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- header for the results page-->
